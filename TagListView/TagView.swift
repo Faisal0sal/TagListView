@@ -200,6 +200,14 @@ open class TagView: UIButton {
     }
     
     
+    public init(title: String , isHotKeyword:Bool) {
+        super.init(frame: CGRect.zero)
+        setTitle(title, for: UIControl.State())
+        ishotKeyWordEnabled = isHotKeyword
+        setupView()
+    }
+
+    
 
     private func setupView() {
         titleLabel?.lineBreakMode = titleLineBreakMode
